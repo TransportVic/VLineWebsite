@@ -1,0 +1,60 @@
+body {
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: Arial;
+
+  color: #00008B;
+}
+
+div.top-content {
+  display: flex;
+}
+
+div.top-content > div.links {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-left: 15px;
+
+  height: 286px;
+}
+
+div.top-content > div.links > a {
+  font-weight: bold;
+  padding-right: 15px;
+  font-family: "Arial Narrow", Arial;
+  text-decoration: none;
+}
+
+div.top-content > div.links > a:visited {
+  color: #00008B;
+}
+
+div.top-content > img {
+  height: 286px;
+}
+
+div.bottom-content {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+div.bottom-content > p.further-info {
+  font-size: 13pt;
+}
+
+div.bottom-content > div.smaller-links {
+  font-size: 8pt;
+  line-height: 14pt;
+  color: #000000;
+}
+
+div.bottom-content > div.smaller-links > a {
+  font-size: 8pt;
+}

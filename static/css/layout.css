@@ -1,0 +1,129 @@
+body {
+  width: 100vw;
+
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-family: Arial;
+}
+
+@media screen and (max-width: 970px) {
+  body {
+    align-items: flex-start;
+  }
+}
+
+div.body-container {
+  width: 900px;
+  min-height: 100vh;
+
+  border-left: 35px solid #9C0018;
+  border-right: 35px solid #9C0018;
+
+  text-align: center;
+}
+
+div.nav {
+  width: calc(100px * 5 + 10px * 4 + 10px * 2);
+  display: inline-flex;
+  margin-top: 15px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+div.nav-item-bar {
+  height: 4px;
+  width: 10px;
+  background-color: #AAAAAA;
+}
+
+div.nav-spacer, a.nav-item, a.nav-item:visited {
+  display: flex;
+  flex-direction: column;
+}
+
+div.nav-item-end {
+  height: 3px;
+}
+
+div.nav-item-content {
+  height: 20px;
+}
+
+div.nav-spacer > * {
+  width: 10px;
+}
+
+a.nav-item > * {
+  width: 100px;
+}
+
+a.nav-item {
+  text-decoration: none;
+}
+
+a.nav-item > div.nav-item-content {
+  background-color: #6A3231;
+
+  color: #FFFFFF;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.nav-item > div.nav-item-end {
+  background-color: #6A3231;
+}
+
+div.body-content {
+  margin-left: 25px;
+  margin-right: 400px;
+
+  text-align: left;
+}
+
+div.body-content p {
+  text-align: justify;
+}
+
+div.content-header {
+  color: #8B0000;
+  font-weight: bold;
+}
+
+h1.section-header, h2.section-header, h3.section-header, h4.section-header {
+  color: #00008B;
+}
+
+h3 ~ h4 {
+  margin-top: -5px;
+  margin-bottom: 2px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+table.vline-table thead tr td {
+  color: #00008B;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+table.vline-table tbody tr td:first-child {
+  color: #8B0000;
+  font-weight: bold;
+}
+
+a, a:visited {
+  color: #0000EE;
+}

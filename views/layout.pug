@@ -1,0 +1,40 @@
+doctype html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"
+html(lang='en-AU')
+  head
+    meta(charset='UTF-8')
+
+    link(rel='stylesheet' href='/static/css/layout.css')
+  body
+    div.body-container
+      div.nav
+        mixin navPart(text)
+          div.nav-item-end
+          div.nav-item-bar
+          div.nav-item-content #{text}
+          div.nav-item-bar
+          div.nav-item-end
+
+        div.nav-spacer
+          +navPart()
+        a(href='/').nav-item
+          +navPart('V/Line')
+        div.nav-spacer
+          +navPart()
+        a(href='/map').nav-item
+          +navPart('Network Map')
+        div.nav-spacer
+          +navPart()
+        a(href='/timetables').nav-item
+          +navPart('Timetables')
+        div.nav-spacer
+          +navPart()
+        a.nav-item
+          +navPart('Feedback')
+        div.nav-spacer
+          +navPart()
+        a.nav-item
+          +navPart('VicTrip')
+        div.nav-spacer
+          +navPart()
+      div.body-content
+        block content
