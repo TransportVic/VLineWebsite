@@ -24,11 +24,12 @@ div.top-content > div.links {
   height: 286px;
 }
 
-div.top-content > div.links > a {
+div.top-content > div.links > a, div.top-content > div.links > a:visited {
   font-weight: bold;
   padding-right: 15px;
   font-family: "Arial Narrow", Arial;
   text-decoration: none;
+  color: #00008B;
 }
 
 div.top-content > div.links > a:visited {
